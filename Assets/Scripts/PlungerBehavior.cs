@@ -44,14 +44,14 @@ public class PlungerBehavior : MonoBehaviour
             {
                 if (_power <= _maxPower)
                 {
-                    _power += 50 * Time.deltaTime;
+                    _power += 500 * Time.deltaTime;
                 }
             }
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 foreach (Rigidbody ball in _ballList)
                 {
-                    ball.AddForce(_power * Vector3.forward);
+                    ball.AddForce(_power * ball.transform.forward);
                 }
             }
         }
