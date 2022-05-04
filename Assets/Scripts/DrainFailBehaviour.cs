@@ -12,7 +12,7 @@ public class DrainFailBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pinball.transform.position.y < -10)
+        if (pinball.transform.position.y < -20)
         {
             this.pinball.transform.position = destination.position;
             ballCount -= 1;
