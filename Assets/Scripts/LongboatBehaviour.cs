@@ -7,6 +7,8 @@ public class LongboatBehaviour : MonoBehaviour
     [SerializeField]
     private float _speed;
     private float _timer;
+    [SerializeField]
+    GameObject _longboat;
 
     public float Speed
     {
@@ -28,6 +30,6 @@ public class LongboatBehaviour : MonoBehaviour
         transform.Translate(transform.forward * Time.deltaTime * Speed);
 
         if (_timer <= 0)
-            Destroy(this);
+            Destroy(_longboat);
     }
 }
