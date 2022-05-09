@@ -175,7 +175,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 87.59558
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -200,8 +200,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600566577}
-  m_LocalRotation: {x: -0.13094716, y: 0.6896224, z: -0.12891996, w: -0.70046663}
-  m_LocalPosition: {x: 74.46017, y: 32.138584, z: 1.6984185}
+  m_LocalRotation: {x: 0.030404707, y: 0.709411, z: 0.030662945, w: -0.70347095}
+  m_LocalPosition: {x: 31.927834, y: 6.848544, z: 5.3971252}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 1436725938}
   - component: {fileID: 1436725937}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Longboat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -272,6 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
+  _longboat: {fileID: 1436725936}
 --- !u!136 &1436725938
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -545,13 +546,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5537810079711022579, guid: 5cb9a6151ee3b1b4791cb7c15904a558, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7392994821832208413, guid: 5cb9a6151ee3b1b4791cb7c15904a558, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7392994821832208413, guid: 5cb9a6151ee3b1b4791cb7c15904a558, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.07
+      value: -17.1
       objectReference: {fileID: 0}
     - target: {fileID: 7392994821832208413, guid: 5cb9a6151ee3b1b4791cb7c15904a558, type: 3}
       propertyPath: m_LocalPosition.y
