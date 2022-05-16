@@ -3,7 +3,12 @@ guid: dcf69f70708a0dc45bcf53bca6157923
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Runes
+    second: {fileID: 2100000, guid: 7f545995d833ab6419265eb4fdabe44b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
