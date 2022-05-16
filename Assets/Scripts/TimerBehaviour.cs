@@ -32,6 +32,7 @@ public class TimerBehaviour : MonoBehaviour
     /// </summary>
     /// <param name="args">Any additional arguments for the timed event.</param>
     public delegate void TimedEvent(params object[] args);
+    public delegate void TimedEventNoArgs();
 
     /// <summary>
     /// An object that raises an event after a given duration.
@@ -46,6 +47,8 @@ public class TimerBehaviour : MonoBehaviour
 
 
         public bool IsActive { get => _isActive; set => _isActive = value; }
+
+        public TimedAction() { }
 
         public TimedAction(TimedEvent timedEvent, TimedActionCountType countType, float duration)
         {
