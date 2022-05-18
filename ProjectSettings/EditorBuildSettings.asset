@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CadeTestScene.unity
     guid: eb049301a2b1a984b840e7cde2571107
+  - enabled: 1
+    path: Assets/Scenes/TerricksTest.unity
+    guid: b3f335192304aff4e89dba72468e285f
   m_configObjects: {}

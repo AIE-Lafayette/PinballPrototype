@@ -13,7 +13,7 @@ public class MainMenuBehavior : MonoBehaviour
 
     public void PlayButton()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("CadeTestScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("TerricksTest");
     }
 
     public void QuitGame()
