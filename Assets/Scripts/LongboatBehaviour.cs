@@ -6,9 +6,10 @@ public class LongboatBehaviour : MonoBehaviour
 {
     [SerializeField]
     private float _speed;
-    private float _timer;
     [SerializeField]
     GameObject _longboat;
+    [SerializeField]
+    private float _timeToDespawn;
 
     public float Speed
     {
@@ -19,17 +20,13 @@ public class LongboatBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _timer = 3;
+        Destroy(gameObject, _timeToDespawn);
     }
 
     // Update is called once per frame
     void Update()
     {
-        _timer -= Time.deltaTime;
-
+        //Longboat moves in one direction. From left to right.
         transform.Translate(transform.forward * Time.deltaTime * Speed);
-
-        if (_timer <= 0)
-            Destroy(_longboat);
     }
 }
