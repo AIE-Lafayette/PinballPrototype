@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlungerBehavior : MonoBehaviour
 {
+    //private PlungerController _plunger;
+
     //[SerializeField]
     //private float _power;
     //[SerializeField]
@@ -19,12 +21,14 @@ public class PlungerBehavior : MonoBehaviour
     //    _powerSlider.minValue = 0f;
     //    _powerSlider.maxValue = _maxPower;
     //    _ballList = new List<Rigidbody>();
-        
+
     //}
 
     //// Update is called once per frame
     //void Update()
     //{
+    //    Vector2 plunger = _plunger.Charge.pullback.ReadValue<Vector2>();
+
     //    //if a ball is the zone of the slider....
     //    if (_ballReady)
     //    {
@@ -44,7 +48,7 @@ public class PlungerBehavior : MonoBehaviour
     //        //..then ball is ready to be fired
     //        _ballReady = true;
     //        //if the space bar is held down....
-    //        if (Input.GetKey(KeyCode.Space))
+    //        if (_plunger.Charge.pullback.triggered)
     //        {
     //            //... charge the power slider
     //            if (_power <= _maxPower)
@@ -58,7 +62,7 @@ public class PlungerBehavior : MonoBehaviour
     //            //...shoot the ball out of the slider
     //            foreach (Rigidbody ball in _ballList)
     //            {
-    //                ball.AddForce(_power * new Vector3(-1,0,0));
+    //                ball.AddForce(_power * new Vector3(-1, 0, 0));
     //            }
     //        }
     //    }
