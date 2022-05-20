@@ -1,0 +1,55 @@
+{
+    "name": "PaddleControls",
+    "maps": [
+        {
+            "name": "Paddle Controller",
+            "id": "29ada114-597e-495e-94fd-cfc15828bf41",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "4db8f767-612c-430e-9d80-2ed1c965f565",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "A and D Paddle",
+                    "id": "f16d74c2-3622-487c-8337-a0aec4c39b6d",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "fe77a26b-a27b-4651-81ce-0ec7fd3c74e5",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "6b3212ba-aa16-45cb-9940-a48402ce38ce",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
