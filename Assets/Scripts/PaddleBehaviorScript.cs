@@ -37,7 +37,6 @@ public class PaddleBehaviorScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Escape();
         _hinge = GetComponent<HingeJoint>();
         _hinge.useSpring = true;
     }
@@ -79,11 +78,5 @@ public class PaddleBehaviorScript : MonoBehaviour
         //_hinge.useLimits = true;
     }
 
-    public void Escape()
-    {
-        if (Input.GetKey("escape"))
-        {
-            Application.Quit();
-        }
-    }
+   
 }
