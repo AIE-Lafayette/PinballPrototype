@@ -22,18 +22,11 @@ public class SideLauncherBehavior : MonoBehaviour
 
         if (!_currentAction.IsActive)
         {
-            _currentAction = TimerBehaviour.Instance.StartNewTimedAction(args => Instantiate(_prefab, transform.position, transform.rotation), TimedActionCountType.SCALEDTIME, 1);
+            _currentAction = TimerBehaviour.Instance.StartNewTimedAction(args => Instantiate(_prefab, _spawnPoint.position, _spawnPoint.rotation), TimedActionCountType.SCALEDTIME, 1);
 
         }
 
     }
 
-    //private void Update()
-    //{
-    //    if (!_currentAction.IsActive)
-    //    {
-    //        _currentAction = TimerBehaviour.Instance.StartNewTimedAction(args => Instantiate(_prefab, transform.position, transform.rotation), TimedActionCountType.SCALEDTIME, 3);
-
-    //    }
-    //}
+    
 }
