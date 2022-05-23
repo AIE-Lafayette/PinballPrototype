@@ -1,0 +1,33 @@
+{
+    "name": "PlungerController",
+    "maps": [
+        {
+            "name": "Charge",
+            "id": "72dd62dd-44b8-4c8d-856b-13c1ad93d698",
+            "actions": [
+                {
+                    "name": "pullback",
+                    "type": "PassThrough",
+                    "id": "d7524167-0100-4ccb-b489-9f457c4171b1",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fda58328-475b-4f7d-a398-22c4729128d0",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "pullback",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
