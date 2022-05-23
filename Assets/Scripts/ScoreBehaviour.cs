@@ -22,7 +22,7 @@ public class ScoreBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.transform.name == "Ball(1)")
+        if(collision.transform.name == "Pinball")
         {
             Score += TotalScore;
             Debug.Log("Score");
