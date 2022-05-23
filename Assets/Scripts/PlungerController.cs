@@ -20,9 +20,9 @@ public class @PlungerController : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""pullback"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""d7524167-0100-4ccb-b489-9f457c4171b1"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
