@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tagName: Ball
-  _force: 2000
+  _force: 1000
 --- !u!1 &7324138559834694823
 GameObject:
   m_ObjectHideFlags: 0
