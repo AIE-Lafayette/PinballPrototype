@@ -633,7 +633,7 @@ HingeJoint:
   m_Anchor: {x: 0.5, y: 0.5, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 18.283321, y: -6.401397, z: 4.7602863}
+  m_ConnectedAnchor: {x: 18.399511, y: -6.2104163, z: 4.8222337}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _restPosition: 0
-  _pressedPosition: 45
+  _pressedPosition: 52
   _hitStrength: 10000
   _flipperDamper: 150
   _inputName: RFlipper
@@ -759,13 +759,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379260571}
-  m_LocalRotation: {x: -0.15246946, y: -0.84529126, z: -0.091919355, w: 0.50377244}
-  m_LocalPosition: {x: 19, y: -7.2, z: 3}
+  m_LocalRotation: {x: -0.19750841, y: -0.7982161, z: -0.13724563, w: 0.5522727}
+  m_LocalPosition: {x: 18.79, y: -6.98, z: 2.95}
   m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: -18, y: -120, z: 10}
+  m_LocalEulerAnglesHint: {x: -25.929, y: -113.064, z: 10.489}
 --- !u!1 &465996760
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,7 +866,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544374462}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9de1feeb1972a5e42b3323703a21178a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -929,7 +929,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544374462}
   m_LocalRotation: {x: 0.07787273, y: 0.25188977, z: -0.09034607, w: 0.9603775}
-  m_LocalPosition: {x: 15.74, y: -6.1, z: -7.93}
+  m_LocalPosition: {x: 15.74, y: -6.1, z: -8.19}
   m_LocalScale: {x: -0.026216, y: 1, z: 8.502611}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1278,7 +1278,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796433354}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9de1feeb1972a5e42b3323703a21178a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1743,7 +1743,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1090356790}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9de1feeb1972a5e42b3323703a21178a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1908,25 +1908,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -21}
---- !u!1 &1216423564 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9135921895397940321, guid: bc8042d03d3c0824daa2cf3fde730902, type: 3}
-  m_PrefabInstance: {fileID: 4285779969962603902}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1216423566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216423564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pinball: {fileID: 0}
-  Score: 250
 --- !u!1 &1328003995
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +2054,7 @@ HingeJoint:
   m_Anchor: {x: 0.5, y: 0.5, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 17.934355, y: -7.338523, z: -4.7593217}
+  m_ConnectedAnchor: {x: 17.872263, y: -6.994238, z: -4.6264143}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2182,13 +2163,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359014691}
-  m_LocalRotation: {x: 0.5037835, y: -0.086865745, z: -0.8463236, w: -0.14964263}
-  m_LocalPosition: {x: 19, y: -7.2, z: -3}
+  m_LocalRotation: {x: 0.5584664, y: -0.11210779, z: -0.7952561, w: -0.2076415}
+  m_LocalPosition: {x: 18.68, y: -6.96, z: -2.73}
   m_LocalScale: {x: 4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 197.326, y: 120, z: -10}
+  m_LocalEulerAnglesHint: {x: 204.219, y: 112.642, z: -12.992981}
 --- !u!1 &1384450662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2284,6 +2265,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -21}
+--- !u!1 &1444322253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3525032943995447922, guid: bc8042d03d3c0824daa2cf3fde730902, type: 3}
+  m_PrefabInstance: {fileID: 4285779969962603902}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1444322254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444322253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 2053806718}
+  Score: 250
 --- !u!1 &1462396473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,6 +2469,25 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1640604380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3525032943995447922, guid: bc8042d03d3c0824daa2cf3fde730902, type: 3}
+  m_PrefabInstance: {fileID: 68774835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1640604386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640604380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 2053806718}
+  Score: 250
 --- !u!1001 &1646729067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2970,7 +2989,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017279708}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9de1feeb1972a5e42b3323703a21178a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3101,7 +3120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abb2076cd2fde044a8aa384efba81372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _velocity: {x: 1, y: -2, z: 0}
+  _velocity: {x: 0, y: -2, z: 0}
 --- !u!1 &2067411282
 GameObject:
   m_ObjectHideFlags: 0
