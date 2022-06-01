@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8744162597841361251}
   - component: {fileID: 2964444109860358111}
   - component: {fileID: 1337541668884751539}
+  - component: {fileID: 8723118415728408187}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -111,6 +112,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tagName: Ball
   _force: 2000
+--- !u!114 &8723118415728408187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210913014512040655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 7300015930387338169, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
+  Score: 250
 --- !u!1 &4215854561856200072
 GameObject:
   m_ObjectHideFlags: 0
