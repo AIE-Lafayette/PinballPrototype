@@ -3,7 +3,12 @@ guid: 96c382e63a7f3264fa05a2073786bba1
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pinball
+    second: {fileID: 2100000, guid: 3651c1728fbb68a48ab7044b54444533, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +50,7 @@ ModelImporter:
     importLights: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

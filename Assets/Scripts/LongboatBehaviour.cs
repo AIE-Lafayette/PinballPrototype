@@ -9,6 +9,8 @@ public class LongboatBehaviour : MonoBehaviour
     [SerializeField]
     GameObject _longboat;
     [SerializeField]
+    private string _tagName;
+    [SerializeField]
     private float _timeToDespawn;
 
     public float Speed
@@ -28,5 +30,13 @@ public class LongboatBehaviour : MonoBehaviour
     {
         //Longboat moves in one direction. From left to right.
         transform.Translate(transform.forward * Time.deltaTime * Speed);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == _tagName)
+        {
+            Destroy(gameObject);
+        }
     }
 }
