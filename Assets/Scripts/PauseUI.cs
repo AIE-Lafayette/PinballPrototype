@@ -31,7 +31,7 @@ public class @PauseUI : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""edd151fa-81b3-4ad3-8620-7504444018ed"",
-                    ""path"": ""<Keyboard>/escape"",
+                    ""path"": ""<Keyboard>/p"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
