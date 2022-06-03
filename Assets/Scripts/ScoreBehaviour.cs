@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreBehaviour : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class ScoreBehaviour : MonoBehaviour
     [SerializeField]
     public int Score;
     private int TotalScore;
+
+    public Text ScoreText;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,15 +20,17 @@ public class ScoreBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        //ScoreText.text = TotalScore.ToString();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.transform.name == "Pinball")
+        if (collision.transform.name == "Pinball")
         {
             Score += TotalScore;
+            ScoreText.text = TotalScore.ToString();
             Debug.Log("Score");
         }
+        
     }
 }
