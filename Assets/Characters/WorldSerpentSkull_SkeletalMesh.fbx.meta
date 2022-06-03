@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WorldSerpent
+    second: {fileID: 2100000, guid: 44b6a967d7858eb4fb60f8580db0526b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -75,7 +80,8 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
+  referencedClips:
+  - 71feb315181c5994c9ceddf28a0a0978
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
