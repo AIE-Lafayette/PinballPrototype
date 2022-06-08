@@ -2,26 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreBehaviour : MonoBehaviour
 {
     public static ScoreBehaviour _instance;
     public GameObject Pinball;
-    private int TotalScore;
+    private int _totalScore = 0;
 
+    public Text TotalScore;
     public Text ScoreText;
     // Start is called before the first frame update
+    void Awake()
+    {
+        
+        _instance = this;
+    }
+
     void Start()
     {
-        TotalScore = 0;
-        _instance = this;
+        _totalScore = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         //Displays they total score to the UI
-        ScoreText.text = TotalScore.ToString();
+        ScoreText.text = _totalScore.ToString();
+        TotalScore.text = _totalScore.ToString();
     }
 
     /// <summary>
@@ -30,7 +38,6 @@ public class ScoreBehaviour : MonoBehaviour
     /// <param name="score">Points to be added to the total score</param>
     public void AddScore(int score)
     {
-        TotalScore += score;
-        ScoreText.text = TotalScore.ToString();
+        _totalScore += score;
     }
 }

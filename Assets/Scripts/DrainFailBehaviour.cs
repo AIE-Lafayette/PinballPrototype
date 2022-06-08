@@ -12,6 +12,14 @@ public class DrainFailBehaviour : MonoBehaviour
     public bool fail;
     public Image Image1, Image2, Image3;
 
+    [SerializeField]
+    private GameObject _gameOverScreen;
+
+    private void Start()
+    {
+        _gameOverScreen.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -33,7 +41,12 @@ public class DrainFailBehaviour : MonoBehaviour
 
         if (ballCount == 0)
         {
-            SceneManager.LoadScene(4);
+            _gameOverScreen.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
         }
     }
 }
