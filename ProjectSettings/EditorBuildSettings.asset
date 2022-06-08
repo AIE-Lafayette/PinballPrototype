@@ -17,5 +17,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TerricksTest.unity
     guid: b3f335192304aff4e89dba72468e285f
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 2c124d0408d610947b96fdb96503037a
+  - enabled: 1
+    path: Assets/Scenes/BrittnieTestScene.unity
+    guid: 27e4fa00c89c30644803de58d15dda56
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a261ed81b1a34e44bbb27eb3abd28695, type: 2}
