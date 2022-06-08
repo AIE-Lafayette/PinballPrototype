@@ -29,7 +29,7 @@ public class LongboatBehaviour : MonoBehaviour
     void Update()
     {
         //Longboat moves in one direction. From left to right.
-        transform.Translate(-transform.forward * Time.deltaTime * Speed);
+        transform.Translate(transform.forward * Time.deltaTime * Speed);
     }
 
     private void OnCollisionEnter(Collision collision)
