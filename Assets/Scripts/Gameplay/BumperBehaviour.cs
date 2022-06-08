@@ -10,6 +10,10 @@ public class BumperBehaviour : MonoBehaviour
     //The force in which the ball should bounce off
     [SerializeField]
     private float _force;
+    [SerializeField]
+    private int _score;
+
+    private ScoreBehaviour _scoreBehaviour;
 
     public float Force
     {
@@ -17,6 +21,7 @@ public class BumperBehaviour : MonoBehaviour
         set { _force = value; }
     }
 
+    
     /// <summary>
     /// When object collides with the bumper, depending on direction and force 
     /// the ball has hit the bumper, will determine the amount of force needed to 
@@ -28,7 +33,11 @@ public class BumperBehaviour : MonoBehaviour
         //If the object colliding the bumpers tag is the tag name...
         if (collision.transform.tag == _tagName)
         {
+            
             Rigidbody ballRigidbody = collision.rigidbody;
+
+            //Calls score behaviours add score function to add points to the players total score.
+            ScoreBehaviour._instance.AddScore(_score);
 
             //...find the direction the ball should go in.
             Vector3 direction = (collision.transform.position - transform.position).normalized;
