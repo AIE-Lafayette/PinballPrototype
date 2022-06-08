@@ -35,8 +35,10 @@ public class BumperBehaviour : MonoBehaviour
         {
             
             Rigidbody ballRigidbody = collision.rigidbody;
+
             //Calls score behaviours add score function to add points to the players total score.
             ScoreBehaviour._instance.AddScore(_score);
+
             //...find the direction the ball should go in.
             Vector3 direction = (collision.transform.position - transform.position).normalized;
             //set the balls direction to always be on the x and z plane
