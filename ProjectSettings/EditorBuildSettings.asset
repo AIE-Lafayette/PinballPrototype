@@ -17,8 +17,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TerricksTest.unity
     guid: b3f335192304aff4e89dba72468e285f
-  - enabled: 1
-    path: Assets/Scenes/GameOverScene.unity
-    guid: abf19a2af11101640a485c8114f8a446
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a261ed81b1a34e44bbb27eb3abd28695, type: 2}
