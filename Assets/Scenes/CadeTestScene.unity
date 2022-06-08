@@ -408,25 +408,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &195055409 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 210913014512040655, guid: 3bf26141ebed0b146b3327e57b2d993e, type: 3}
-  m_PrefabInstance: {fileID: 563044096}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &195055416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 195055409}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a31f72e749ef724388b30d9fc080495, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pinball: {fileID: 614963044}
-  ScoreText: {fileID: 1355751053}
 --- !u!1 &247475084
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +969,10 @@ PrefabInstance:
       propertyPath: _score
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 1337541668884751539, guid: 3bf26141ebed0b146b3327e57b2d993e, type: 3}
+      propertyPath: _doubleScore
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 4215854561856200072, guid: 3bf26141ebed0b146b3327e57b2d993e, type: 3}
       propertyPath: m_Name
       value: CircleBummper
@@ -1074,7 +1059,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596386264}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.753198
   m_Height: 2.401752
@@ -2399,7 +2384,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 951ce628f406bb24d8b641af1376d55e, type: 3}
       propertyPath: m_Name
-      value: Rune_a_Mesh
+      value: RuneDouble
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 951ce628f406bb24d8b641af1376d55e, type: 3}
+      propertyPath: m_TagString
+      value: Rune
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 951ce628f406bb24d8b641af1376d55e, type: 3}
@@ -3256,15 +3245,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96c382e63a7f3264fa05a2073786bba1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.58
+      value: 5.66
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96c382e63a7f3264fa05a2073786bba1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.11
+      value: -1.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96c382e63a7f3264fa05a2073786bba1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.74
+      value: 3.12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96c382e63a7f3264fa05a2073786bba1, type: 3}
       propertyPath: m_LocalRotation.w
