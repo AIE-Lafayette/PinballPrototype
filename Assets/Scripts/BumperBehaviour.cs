@@ -12,6 +12,8 @@ public class BumperBehaviour : MonoBehaviour
     private float _force;
     [SerializeField]
     private int _score;
+    [SerializeField]
+    private int _doubleScore;
 
     private ScoreBehaviour _scoreBehaviour;
 

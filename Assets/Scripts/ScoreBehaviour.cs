@@ -30,7 +30,16 @@ public class ScoreBehaviour : MonoBehaviour
     /// <param name="score">Points to be added to the total score</param>
     public void AddScore(int score)
     {
+        if (MaterialChangeBehavior.isMultiplyerActive)
+            score *= 2;
+
         TotalScore += score;
         ScoreText.text = TotalScore.ToString();
     }
+
+    
+
+
+
+
 }
