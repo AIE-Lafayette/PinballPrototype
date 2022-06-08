@@ -29,7 +29,7 @@ public class ScoreBehaviour : MonoBehaviour
     {
         //Displays they total score to the UI
         ScoreText.text = _totalScore.ToString();
-        TotalScore.text = _totalScore.ToString();
+        //TotalScore.text = _totalScore.ToString();
     }
 
     /// <summary>
@@ -41,7 +41,7 @@ public class ScoreBehaviour : MonoBehaviour
         if (MaterialChangeBehavior.isMultiplyerActive)
             score *= 2;
 
-        TotalScore += score;
+        _totalScore += score;
         ScoreText.text = TotalScore.ToString();
     }
 
