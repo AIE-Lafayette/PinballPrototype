@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreBehaviour : MonoBehaviour
 {
     public static ScoreBehaviour _instance;
     public GameObject Pinball;
-    private int TotalScore;
 
     public Text ScoreText;
-    // Start is called before the first frame update
-    void Start()
+
+    public static int Score;
+
+    //Start is called before the first frame update
+    void Awake()
     {
-        TotalScore = 0;
+
         _instance = this;
     }
 
@@ -21,7 +24,7 @@ public class ScoreBehaviour : MonoBehaviour
     void Update()
     {
         //Displays they total score to the UI
-        ScoreText.text = TotalScore.ToString();
+        ScoreText.text = Score.ToString();
     }
 
     /// <summary>
@@ -33,8 +36,8 @@ public class ScoreBehaviour : MonoBehaviour
         if (MaterialChangeBehavior.isMultiplyerActive)
             score *= 2;
 
-        TotalScore += score;
-        ScoreText.text = TotalScore.ToString();
+        Score += score;
+        ScoreText.text = Score.ToString();
     }
 
     
