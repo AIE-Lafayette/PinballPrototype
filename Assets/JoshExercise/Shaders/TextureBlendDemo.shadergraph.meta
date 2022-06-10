@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: f5042c4591cfde949bb32baa6edecc38
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: '{"shaderPath":"Shader Graphs/TextureBlendDemo","attributes":[{"isBaseTexture":false,"channel":4,"index":0,"range":{"x":0.0,"y":1.0},"propertyTarget":"Texture2D_a4b613f4cc224b32b4f76ee271ec6160","mask":0},{"isBaseTexture":false,"channel":4,"index":1,"range":{"x":0.0,"y":1.0},"propertyTarget":"Texture2D_b328f10c03474920b2a6e4f0c53efc23","mask":0}]}'
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
