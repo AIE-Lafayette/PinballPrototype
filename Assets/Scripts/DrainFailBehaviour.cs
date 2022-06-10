@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DrainFailBehaviour : MonoBehaviour
@@ -9,6 +10,7 @@ public class DrainFailBehaviour : MonoBehaviour
     public Transform destination;
     public int ballCount = 3;
     public bool fail;
+    public Image Image1, Image2, Image3;
 
     // Update is called once per frame
     void Update()
@@ -19,9 +21,19 @@ public class DrainFailBehaviour : MonoBehaviour
             ballCount -= 1;
         }
 
+        if (ballCount == 2)
+        {
+            Image1.enabled = false;
+        }
+
+        if (ballCount == 1)
+        {
+            Image2.enabled = false;
+        }
+
         if (ballCount == 0)
         {
-            SceneManager.LoadScene("GameOverScene");
+            SceneManager.LoadScene(4);
         }
     }
 }
