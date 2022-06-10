@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -331,7 +331,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pinball: {fileID: 206519166}
-  TotalScore: {fileID: 532236631}
   ScoreText: {fileID: 599903657}
 --- !u!1 &200611462 stripped
 GameObject:
@@ -383,7 +382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pinball: {fileID: 206519166}
   destination: {fileID: 319171857}
-  ballCount: 1
+  ballCount: 3
   fail: 0
   Image1: {fileID: 1279891704}
   Image2: {fileID: 1368112219}
@@ -1552,7 +1551,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pinball: {fileID: 206519166}
-  TotalScore: {fileID: 532236631}
   ScoreText: {fileID: 599903657}
 --- !u!4 &760292496 stripped
 Transform:
@@ -2019,6 +2017,10 @@ PrefabInstance:
     - target: {fileID: 4875049406035889902, guid: 6585905bbd34fbb42a8a53bfcadcbfb2, type: 3}
       propertyPath: m_Name
       value: ballRespawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 4875049406035889902, guid: 6585905bbd34fbb42a8a53bfcadcbfb2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6585905bbd34fbb42a8a53bfcadcbfb2, type: 3}
@@ -2859,6 +2861,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8325974387685924041, guid: 156bf07dfad888344a78ffb998c08359, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8325974387745680099, guid: 156bf07dfad888344a78ffb998c08359, type: 3}
       propertyPath: m_Name
       value: GameOverScreen
@@ -2866,6 +2872,10 @@ PrefabInstance:
     - target: {fileID: 8325974387745680099, guid: 156bf07dfad888344a78ffb998c08359, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325974387745680102, guid: 156bf07dfad888344a78ffb998c08359, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8325974387745680103, guid: 156bf07dfad888344a78ffb998c08359, type: 3}
       propertyPath: m_Pivot.x
@@ -2951,6 +2961,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8325974387745680104, guid: 156bf07dfad888344a78ffb998c08359, type: 3}
+      propertyPath: _pauseMenu
+      value: 
+      objectReference: {fileID: 872288660}
     - target: {fileID: 8325974387745680105, guid: 156bf07dfad888344a78ffb998c08359, type: 3}
       propertyPath: Pinball
       value: 
@@ -2963,8 +2977,7 @@ PrefabInstance:
       propertyPath: TotalScore
       value: 
       objectReference: {fileID: 532236631}
-    m_RemovedComponents:
-    - {fileID: 8325974387745680105, guid: 156bf07dfad888344a78ffb998c08359, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 156bf07dfad888344a78ffb998c08359, type: 3}
 --- !u!1 &1785896086
 GameObject:

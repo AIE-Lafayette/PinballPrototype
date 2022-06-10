@@ -15,14 +15,11 @@ public class DrainFailBehaviour : MonoBehaviour
     [SerializeField]
     private GameObject _gameOverScreen;
 
-    private void Start()
-    {
-        _gameOverScreen.SetActive(false);
-    }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (pinball.transform.position.y < -20)
         {
             this.pinball.transform.position = destination.position;
@@ -43,6 +40,7 @@ public class DrainFailBehaviour : MonoBehaviour
         {
             _gameOverScreen.SetActive(true);
             Time.timeScale = 0;
+
         }
         else
         {

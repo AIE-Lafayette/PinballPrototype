@@ -8,28 +8,23 @@ public class ScoreBehaviour : MonoBehaviour
 {
     public static ScoreBehaviour _instance;
     public GameObject Pinball;
-    private int _totalScore = 0;
 
-    public Text TotalScore;
     public Text ScoreText;
-    // Start is called before the first frame update
+
+    public static int Score;
+
+    //Start is called before the first frame update
     void Awake()
     {
-        
-        _instance = this;
-    }
 
-    void Start()
-    {
-        _totalScore = 0;
+        _instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
         //Displays they total score to the UI
-        ScoreText.text = _totalScore.ToString();
-        //TotalScore.text = _totalScore.ToString();
+        ScoreText.text = Score.ToString();
     }
 
     /// <summary>
@@ -41,8 +36,8 @@ public class ScoreBehaviour : MonoBehaviour
         if (MaterialChangeBehavior.isMultiplyerActive)
             score *= 2;
 
-        _totalScore += score;
-        ScoreText.text = TotalScore.ToString();
+        Score += score;
+        ScoreText.text = Score.ToString();
     }
 
     
