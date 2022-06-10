@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 263cf6b19df306c4ca46619cd0981bb2, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.48456138, g: 0.81785655, b: 0.63284886, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -763,7 +763,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
+  - {fileID: 2100000, guid: 2c22fc46cca27254e9f90c32c3f11f58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5604,7 +5604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pinball: {fileID: 0}
-  Score: 250
+  ScoreText: {fileID: 0}
 --- !u!1001 &473919631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6293,6 +6293,9 @@ MonoBehaviour:
   destination: {fileID: 983614077}
   ballCount: 3
   fail: 0
+  Image1: {fileID: 0}
+  Image2: {fileID: 0}
+  Image3: {fileID: 0}
 --- !u!1 &871559727
 GameObject:
   m_ObjectHideFlags: 0
@@ -8385,6 +8388,9 @@ MonoBehaviour:
   destination: {fileID: 794875249}
   ballCount: 3
   fail: 0
+  Image1: {fileID: 0}
+  Image2: {fileID: 0}
+  Image3: {fileID: 0}
 --- !u!135 &1870731239
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9120,6 +9126,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
+      propertyPath: RotationModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
       propertyPath: VelocityModule.enabled
       value: 1
       objectReference: {fileID: 0}
@@ -9168,12 +9178,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
+      propertyPath: RotationModule.curve.scalar
+      value: 1.3962634
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
+      propertyPath: RotationModule.separateAxes
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
       propertyPath: ShapeModule.radiusThickness
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
       propertyPath: VelocityModule.inWorldSpace
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
+      propertyPath: RotationModule.x.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
+      propertyPath: RotationModule.y.minMaxState
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
       propertyPath: ShapeModule.alignToDirection
@@ -9210,6 +9236,10 @@ PrefabInstance:
     - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
+      propertyPath: RotationModule.curve.minMaxState
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1888343928235735541, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
       propertyPath: InitialModule.startSize.minScalar
@@ -9319,5 +9349,9 @@ PrefabInstance:
       propertyPath: m_MinParticleSize
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6005668993898298658, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c22fc46cca27254e9f90c32c3f11f58, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca9b83330956d6443a82e6f77da80750, type: 3}
