@@ -14,8 +14,8 @@ public class BumperBehaviour : MonoBehaviour
     private int _score;
     [SerializeField]
     private int _doubleScore;
-
     private ScoreBehaviour _scoreBehaviour;
+
 
     public float Force
     {
@@ -35,6 +35,7 @@ public class BumperBehaviour : MonoBehaviour
         //If the object colliding the bumpers tag is the tag name...
         if (collision.transform.tag == _tagName)
         {
+            
             
             Rigidbody ballRigidbody = collision.rigidbody;
 
