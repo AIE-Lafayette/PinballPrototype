@@ -2409,6 +2409,59 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1988724468278860301, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
   m_PrefabInstance: {fileID: 1718034707}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &739145400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739145399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d42fede56b80894194e847655d83611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _restPosition: 0
+  _pressedPosition: 52
+  _hitStrength: 10000
+  _flipperDamper: 150
+  _inputName: LFlipper
+--- !u!59 &739145401
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739145399}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 4.192272, z: -1.15}
+  m_Axis: {x: 0, y: 1, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 45.44992, y: -2.867436, z: -5.0092564}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: 0
+    max: 52
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!54 &739145405
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5171,6 +5224,59 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8841603815528484257, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
   m_PrefabInstance: {fileID: 1718034707}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2028781986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028781985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d42fede56b80894194e847655d83611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _restPosition: 0
+  _pressedPosition: 52
+  _hitStrength: 10000
+  _flipperDamper: 150
+  _inputName: RFlipper
+--- !u!59 &2028781987
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028781985}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 4.192272, z: -1.07}
+  m_Axis: {x: 0, y: 1, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 45.503746, y: -2.867436, z: 5.003094}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: 0
+    max: 52
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!54 &2028781988
 Rigidbody:
   m_ObjectHideFlags: 0
