@@ -9,23 +9,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7300015930387338169, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
       propertyPath: m_Name
-      value: Ball
+      value: Ball Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7300015930387338171, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7300015930387338173, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d6ef3a53122ac90458aa388ddf732fa0, type: 2}
     - target: {fileID: 7300015930387338175, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7300015930387338175, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
       propertyPath: m_LocalScale.x
-      value: 45
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7300015930387338175, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
       propertyPath: m_LocalScale.y
-      value: 45
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7300015930387338175, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
       propertyPath: m_LocalScale.z
-      value: 45
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7300015930387338175, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,5 +75,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7300015930387338168, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 73c7d5af5a91d7444acb85f6a43f2498, type: 3}
