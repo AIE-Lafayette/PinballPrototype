@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 33547649}
   - component: {fileID: 33547648}
   - component: {fileID: 33547647}
+  - component: {fileID: 33547651}
   m_Layer: 0
   m_Name: Bumber Colider (1)
   m_TagString: Untagged
@@ -151,10 +152,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33547645}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07255988, y: 0.07861374, z: 0.10157152}
+  m_LocalPosition: {x: -0.000176089, y: 0.08827551, z: 0.0009290548}
   m_LocalScale: {x: 0.0262687, y: 0.096617565, z: 0.0262687}
   m_Children: []
-  m_Father: {fileID: 2086218109}
+  m_Father: {fileID: 775120163}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &33547647
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tagName: Ball
-  _force: 500
+  _force: 2000
   _score: 250
   _doubleScore: 0
 --- !u!136 &33547648
@@ -236,6 +237,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33547645}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &33547651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33547645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 919132147629641747}
+  ScoreText: {fileID: 2111063444}
 --- !u!1 &39842245 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3778271344998762822, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
@@ -272,6 +287,8 @@ GameObject:
   - component: {fileID: 59805707}
   - component: {fileID: 59805706}
   - component: {fileID: 59805705}
+  - component: {fileID: 59805709}
+  - component: {fileID: 59805708}
   m_Layer: 0
   m_Name: Left Boat Collider
   m_TagString: Untagged
@@ -286,9 +303,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59805703}
-  m_LocalRotation: {x: -0, y: 0.009828299, z: -0, w: 0.9999517}
+  m_LocalRotation: {x: -0, y: 0.0098282695, z: -0, w: 0.9999518}
   m_LocalPosition: {x: 0.0003719115, y: -0.03794165, z: 0.023471547}
-  m_LocalScale: {x: 0.24013469, y: 0.040022448, z: 0.020011224}
+  m_LocalScale: {x: 0.24013469, y: 0.040022448, z: 0.020011228}
   m_Children: []
   m_Father: {fileID: 1759201316}
   m_RootOrder: 7
@@ -355,6 +372,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59805703}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &59805708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59805703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 919132147629641747}
+  ScoreText: {fileID: 2111063444}
+--- !u!114 &59805709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59805703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8b52cc6681cde40b7173708b5ca899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tagName: Ball
+  _force: 2000
+  _score: 250
+  _doubleScore: 0
 --- !u!1 &80412204
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +604,7 @@ GameObject:
   - component: {fileID: 179341527}
   - component: {fileID: 179341526}
   - component: {fileID: 179341525}
+  - component: {fileID: 179341529}
   m_Layer: 0
   m_Name: Bumber Colider
   m_TagString: Untagged
@@ -591,7 +639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tagName: Ball
-  _force: 500
+  _force: 2000
   _score: 250
   _doubleScore: 0
 --- !u!136 &179341526
@@ -657,6 +705,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179341523}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &179341529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179341523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 919132147629641747}
+  ScoreText: {fileID: 2111063444}
 --- !u!1 &200472249 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7761378799980645664, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
@@ -689,6 +751,7 @@ GameObject:
   - component: {fileID: 208956994}
   - component: {fileID: 208956993}
   - component: {fileID: 208956992}
+  - component: {fileID: 208956997}
   m_Layer: 0
   m_Name: Sheild Bumber Collider (1)
   m_TagString: Untagged
@@ -789,6 +852,20 @@ Transform:
   m_Father: {fileID: 1520079799}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &208956997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208956991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 919132147629641747}
+  ScoreText: {fileID: 2111063444}
 --- !u!1 &284229860
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,6 +1062,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fc2ab537091a6e49b10cce47e742cf6, type: 3}
+--- !u!4 &323535946 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6499119321267280077, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+  m_PrefabInstance: {fileID: 1718034707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &367544168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,6 +1911,7 @@ GameObject:
   - component: {fileID: 598518144}
   - component: {fileID: 598518143}
   - component: {fileID: 598518142}
+  - component: {fileID: 598518147}
   m_Layer: 0
   m_Name: Sheild Bumber Collider
   m_TagString: Untagged
@@ -1929,6 +2012,20 @@ Transform:
   m_Father: {fileID: 1859055601}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &598518147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598518141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 919132147629641747}
+  ScoreText: {fileID: 2111063444}
 --- !u!1 &607726709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132148797320702, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
@@ -2307,6 +2404,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 37, y: -90, z: 0}
+--- !u!1 &739145399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1988724468278860301, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+  m_PrefabInstance: {fileID: 1718034707}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &739145405
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739145399}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &748205882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2420,6 +2538,11 @@ Transform:
   m_Father: {fileID: 805591808}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &775120163 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8644012750944898932, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+  m_PrefabInstance: {fileID: 1718034707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &805591808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 543450652781574186, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
@@ -2881,6 +3004,7 @@ GameObject:
   - component: {fileID: 1009539823}
   - component: {fileID: 1009539822}
   - component: {fileID: 1009539821}
+  - component: {fileID: 1009539826}
   m_Layer: 0
   m_Name: Sheild Bumber Collider (2)
   m_TagString: Untagged
@@ -2981,6 +3105,20 @@ Transform:
   m_Father: {fileID: 1259932642}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1009539826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009539820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 919132147629641747}
+  ScoreText: {fileID: 2111063444}
 --- !u!1 &1058397155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3469,6 +3607,8 @@ GameObject:
   - component: {fileID: 1251518659}
   - component: {fileID: 1251518658}
   - component: {fileID: 1251518657}
+  - component: {fileID: 1251518661}
+  - component: {fileID: 1251518660}
   m_Layer: 0
   m_Name: Right Ship Collider
   m_TagString: Untagged
@@ -3483,9 +3623,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251518655}
-  m_LocalRotation: {x: -0, y: -0.005045325, z: -0, w: 0.9999873}
-  m_LocalPosition: {x: -0.0012066506, y: -0.047947224, z: -0.03033017}
-  m_LocalScale: {x: 0.24013448, y: 0.040022414, z: 0.020011207}
+  m_LocalRotation: {x: -0, y: -0.005045295, z: -0, w: 0.9999873}
+  m_LocalPosition: {x: -0.0012066816, y: -0.047947224, z: -0.03033015}
+  m_LocalScale: {x: 0.24013445, y: 0.040022414, z: 0.020011207}
   m_Children: []
   m_Father: {fileID: 39842246}
   m_RootOrder: 7
@@ -3552,14 +3692,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251518655}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1251518660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251518655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8b52cc6681cde40b7173708b5ca899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tagName: Ball
+  _force: 2000
+  _score: 250
+  _doubleScore: 0
+--- !u!114 &1251518661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251518655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 919132147629641747}
+  ScoreText: {fileID: 2111063444}
 --- !u!4 &1259932642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 543450652128116182, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
-  m_PrefabInstance: {fileID: 1718034707}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1261574118 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8644012750944898932, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
   m_PrefabInstance: {fileID: 1718034707}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1359014691
@@ -4385,6 +4550,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 4634644969577695806, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.2588191
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634644969577695806, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634644969577695806, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9659258
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634644969577695806, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634644969577695806, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 4701125171718036181, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.84
@@ -4396,6 +4581,34 @@ PrefabInstance:
     - target: {fileID: 4910791814213148655, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499119321267280077, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556715813116713868, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.76867
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556715813116713868, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556715813116713868, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.96126175
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556715813116713868, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.27563733
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556715813116713868, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556715813116713868, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8597183465770823904, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4958,59 +5171,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8841603815528484257, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
   m_PrefabInstance: {fileID: 1718034707}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2028781986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028781985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d42fede56b80894194e847655d83611, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _restPosition: 0
-  _pressedPosition: 52
-  _hitStrength: 10000
-  _flipperDamper: 150
-  _inputName: 
---- !u!59 &2028781987
-HingeJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028781985}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 4.192272, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 45.890743, y: -2.867436, z: 4.3327937}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 0
-  m_Limits:
-    min: 0
-    max: 0
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!54 &2028781988
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5022,7 +5182,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -5040,6 +5200,7 @@ GameObject:
   - component: {fileID: 2056695302}
   - component: {fileID: 2056695301}
   - component: {fileID: 2056695300}
+  - component: {fileID: 2056695304}
   m_Layer: 0
   m_Name: Bumber Colider (2)
   m_TagString: Untagged
@@ -5055,10 +5216,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056695298}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.07372843, y: 0.08827551, z: -0.10098665}
+  m_LocalPosition: {x: -0.000992464, y: 0.07861374, z: 0.000049828}
   m_LocalScale: {x: 0.0262687, y: 0.096617565, z: 0.0262687}
   m_Children: []
-  m_Father: {fileID: 1261574118}
+  m_Father: {fileID: 323535946}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2056695300
@@ -5074,7 +5235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tagName: Ball
-  _force: 500
+  _force: 2000
   _score: 250
   _doubleScore: 0
 --- !u!136 &2056695301
@@ -5140,6 +5301,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056695298}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2056695304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056695298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685629c4dfa1e1a43bda2b6818d5ed53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pinball: {fileID: 919132147629641747}
+  ScoreText: {fileID: 2111063444}
 --- !u!1 &2067411282
 GameObject:
   m_ObjectHideFlags: 0
@@ -5240,11 +5415,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!4 &2086218109 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6499119321267280077, guid: f2b81b3f7cb17e842925e90117b262d5, type: 3}
-  m_PrefabInstance: {fileID: 1718034707}
+--- !u!114 &2111063444 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5043834629747619122, guid: 2e3f0f2ad69754f41bb9055dabf78576, type: 3}
+  m_PrefabInstance: {fileID: 1469505335}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2115649381
 GameObject:
   m_ObjectHideFlags: 0
@@ -5374,15 +5555,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2097229020204906634, guid: fd9cc6b1fb343c8489d8ad48834fad91, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.659996
+      value: 48.32
       objectReference: {fileID: 0}
     - target: {fileID: 2097229020204906634, guid: fd9cc6b1fb343c8489d8ad48834fad91, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.22
+      value: -5.32
       objectReference: {fileID: 0}
     - target: {fileID: 2097229020204906634, guid: fd9cc6b1fb343c8489d8ad48834fad91, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.430001
+      value: 15.684
       objectReference: {fileID: 0}
     - target: {fileID: 2097229020204906634, guid: fd9cc6b1fb343c8489d8ad48834fad91, type: 3}
       propertyPath: m_LocalRotation.w
