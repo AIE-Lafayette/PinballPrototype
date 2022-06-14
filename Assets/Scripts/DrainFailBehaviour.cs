@@ -39,12 +39,12 @@ public class DrainFailBehaviour : MonoBehaviour
         if (ballCount == 0)
         {
             _gameOverScreen.SetActive(true);
-            Time.timeScale = 0;
+           
 
         }
         else
         {
-            Time.timeScale = 1;
+            
         }
     }
 }
