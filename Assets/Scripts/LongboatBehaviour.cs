@@ -36,6 +36,7 @@ public class LongboatBehaviour : MonoBehaviour
     {
         if (collision.transform.tag == _tagName)
         {
+            ScoreBehaviour._instance.AddScore(300);
             Destroy(gameObject);
         }
     }

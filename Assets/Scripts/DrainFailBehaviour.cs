@@ -38,13 +38,7 @@ public class DrainFailBehaviour : MonoBehaviour
 
         if (ballCount == 0)
         {
-            _gameOverScreen.SetActive(true);
-           
-
-        }
-        else
-        {
-            
+            SceneManager.LoadScene("GameOverScene");
         }
     }
 }
