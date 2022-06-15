@@ -12,8 +12,8 @@ public class DrainFailBehaviour : MonoBehaviour
     public bool fail;
     public Image Image1, Image2, Image3;
 
-    [SerializeField]
-    private GameObject _gameOverScreen;
+    //[SerializeField]
+    //private GameObject _gameOverScreen;
 
 
     // Update is called once per frame

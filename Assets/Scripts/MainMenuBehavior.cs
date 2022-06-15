@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuBehavior : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class MainMenuBehavior : MonoBehaviour
 
     public void PlayButton()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("CadeTestScene");
+        SceneManager.LoadScene("MainScene");
     }
 
     public void QuitGame()
