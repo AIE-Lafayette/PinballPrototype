@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PaddleBehaviorScript : MonoBehaviour
 {
-    private PaddleControls _paddleControls;
-
     [SerializeField]
     private float _restPosition = 0f;
     [SerializeField]
@@ -18,22 +16,6 @@ public class PaddleBehaviorScript : MonoBehaviour
     public string _inputName;
     HingeJoint _hinge;
 
-
-    private void Awake()
-    {
-        _paddleControls = new PaddleControls();
-    }
-
-    private void OnEnable()
-    {
-        _paddleControls.Enable();
-    }
-
-    private void OnDisable()
-    {
-        _paddleControls.Disable();
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -44,9 +26,6 @@ public class PaddleBehaviorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-
-
         JointSpring spring = new JointSpring();
         spring.spring = _hitStrength;
         spring.damper = _flipperDamper;

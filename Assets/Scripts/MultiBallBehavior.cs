@@ -29,6 +29,7 @@ public class MultiBallBehavior : MonoBehaviour
     {
     }
 
+    //changes material, activates multiplyer, disabled collider, sets spawn point of spare ball and resets after 15 seconds
     private void OnTriggerEnter(Collider other)
     {
         if (isMultiBallActive)
@@ -44,8 +45,5 @@ public class MultiBallBehavior : MonoBehaviour
 
     }
 
-    private void SpawnBall()
-    {
-
-    }
+    
 }

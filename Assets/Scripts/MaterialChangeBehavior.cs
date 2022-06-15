@@ -23,8 +23,10 @@ public class MaterialChangeBehavior : MonoBehaviour
     {
     }
 
+    //changes material, activates multiplyer, disabled collider and resets after 15 seconds
     private void OnTriggerEnter(Collider other)
     {
+        
         if (isMultiplyerActive)
             return;
 

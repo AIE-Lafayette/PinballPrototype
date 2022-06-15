@@ -10,7 +10,7 @@ public class MainMenuBehavior : MonoBehaviour
     {
         
     }
-
+    //Loads scene once the play button is pressed
     public void PlayButton()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("CadeTestScene");

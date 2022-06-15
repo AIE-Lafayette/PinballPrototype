@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class PlungerBehavior : MonoBehaviour
 {
-    private PlungerController _plunger;
-
     [SerializeField]
     private float _power;
     [SerializeField]
