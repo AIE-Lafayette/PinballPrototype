@@ -17,7 +17,6 @@ public class SideLauncherBehavior : MonoBehaviour
         _currentAction = new TimerBehaviour.TimedAction();
     }
 
-    //on trigger instantiate object and block off the hole
     private void OnTriggerEnter(Collider other)
     {
 
