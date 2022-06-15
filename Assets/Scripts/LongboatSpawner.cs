@@ -20,7 +20,7 @@ public class LongboatSpawner : MonoBehaviour
     {
         if (!_currentAction.IsActive)
         {
-            _currentAction = TimerBehaviour.Instance.StartNewTimedAction(args => Instantiate(_longboat, transform.position, transform.rotation), TimedActionCountType.SCALEDTIME, 3);
+            _currentAction = TimerBehaviour.Instance.StartNewTimedAction(args => Instantiate(_longboat, transform.position, transform.rotation), TimedActionCountType.SCALEDTIME, 8);
             
         }
     }

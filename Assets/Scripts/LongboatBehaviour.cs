@@ -22,7 +22,7 @@ public class LongboatBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, _timeToDespawn);
+        Destroy(gameObject, 2);
     }
 
     // Update is called once per frame
@@ -36,6 +36,7 @@ public class LongboatBehaviour : MonoBehaviour
     {
         if (collision.transform.tag == _tagName)
         {
+            ScoreBehaviour._instance.AddScore(600);
             Destroy(gameObject);
         }
     }
