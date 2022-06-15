@@ -52,7 +52,7 @@ public class PlungerBehavior : MonoBehaviour
                 //... charge the power slider
                 if (_power <= _maxPower)
                 {
-                    _power += 5000 * Time.deltaTime;
+                    _power += 8000 * Time.deltaTime;
                 }
             }
             //if the spacebar is released
