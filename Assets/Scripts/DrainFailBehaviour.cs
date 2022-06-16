@@ -19,7 +19,7 @@ public class DrainFailBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //If the ball falls below -20 on the y the ball will respawn at the given position also will decrement ball count by 1
         if (pinball.transform.position.y < -20)
         {
             this.pinball.transform.position = destination.position;
