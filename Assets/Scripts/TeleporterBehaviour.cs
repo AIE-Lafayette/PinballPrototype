@@ -15,6 +15,7 @@ public class TeleporterBehaviour : MonoBehaviour
     {
        
     }
+    //On colision will rest the objects position to the given destination
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == _tagName)
